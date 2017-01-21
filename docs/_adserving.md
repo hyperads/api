@@ -2,9 +2,9 @@
 
 ### HTTP endpoint
 
-`GET http://ad.dispply.com/v2/ads/:placement_id`
+`GET http://ads.hyperadx.com/v2/ads/:placement_id`
 
-### (GET) request parameters 
+### (GET) request parameters
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
