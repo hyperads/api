@@ -4,9 +4,7 @@
 
 `GET http://ad.dispply.com/v2/ads/:placement_id`
 
-#### (GET) request parameters 
-
-### Query Parameters
+### (GET) request parameters 
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
