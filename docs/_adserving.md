@@ -1,6 +1,6 @@
 #Ad Serving API 
 
-#### HTTP endpoint
+### HTTP endpoint
 
 `GET http://ad.dispply.com/v2/ads/:placement_id`
 
@@ -21,7 +21,7 @@ gaid | false | No | Android advertising ID
 limit | false | 1 | Count of advertisements
 user_key | false | No | User's ID for frequency capping and profile (replacement for Google's GAID and iOS IFA when disabled ad tracking in iOS 10)
 
-#### Response parameters
+### Response parameters
 
 ```json
 {
