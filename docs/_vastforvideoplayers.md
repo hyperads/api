@@ -1,4 +1,4 @@
-### VAST player API
+# VAST player API
 ### API for obtaining VAST XML for applying in DFP or MoPub
 
 #### HTTP endpoint
