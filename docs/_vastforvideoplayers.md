@@ -3,7 +3,7 @@
 
 #### HTTP endpoint
 
-`GET http://ad.dispply.com/v2/vast/:placement_id`
+`GET http://ads.hyperadx.com/v2/vast/:placement_id`
 
 #### (GET) request parameters 
 
@@ -18,4 +18,4 @@ gaid | false | No | Google identifier for Advertiser
 ios_idfa | false | No | iOS identifier for Advertiser
 euid | For Mopub | No | Mopub identifier
 
-MoPub sample – http://ad.dispply.com/v2/vast/wp8Jb87v?v=3.0&ip=%%IPADDRESS%%&user_agent=%%USERAGENT%%&eudid=%eudid!
+MoPub sample – http://ads.hyperadx.com/v2/vast/wp8Jb87v?v=3.0&ip=%%IPADDRESS%%&user_agent=%%USERAGENT%%&eudid=%eudid!
