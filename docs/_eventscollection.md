@@ -2,7 +2,7 @@
 ## API for sending the events from publisher/advertiser 
 #### HTTP endpoint
 
-`GET http://ad.dispply.com/v2/events`
+`GET http://ads.hyperadx.com/v2/events`
 
 #### (GET) request parameters 
 
