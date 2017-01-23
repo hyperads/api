@@ -1,30 +1,27 @@
 #Ad Serving API 
 
-#### HTTP endpoint
+### HTTP endpoint
 
-`GET http://ad.dispply.com/v2/ads/:placement_id`
+`GET http://ads.hyperadx.com/v2/ads/:placement_id`
 
-#### (GET) request parameters 
-
-### Query Parameters
+### (GET) request parameters
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Requester's ip | Device IP
 user_agent | false | Requester's user-agent | Device user-agent
 platform | false | No | Device platform (ios/android)
-device_type | false | phone | Device type (phone/tablet)
+device_type | false | phone | Device type (phone/tablet) if the user-agent absent
 type | false | native | Type of advertisement: native/interstitial/html/banner/video/native_video/rewarded_video. Multiple values separated by "\|"
 format | false | No | Creative's format (ex. 120x80)
 content | false | title,icon,main | Required native content separated by comma: title,desc,icon,main
-vast_tag | false | No | Values: true, 1. Return VAST Tag link instead of VAST XML in response
 callback | false | No | Callback function for [JSONP](https://en.wikipedia.org/wiki/JSONP) request
 ios_idfa | false| No | iOS advertising ID
 gaid | false | No | Android advertising ID
 limit | false | 1 | Count of advertisements
 user_key | false | No | User's ID for frequency capping and profile (replacement for Google's GAID and iOS IFA when disabled ad tracking in iOS 10)
 
-#### Response parameters
+### Response parameters
 
 ```json
 {
@@ -41,7 +38,6 @@ user_key | false | No | User's ID for frequency capping and profile (replacement
       "cta":"Install Now!",
       "type": "native|html|video",
       "vast": "VAST",
-      "vast_tag": "Link to VAST Tag",
       "markup": "HTML content",
       "creatives": {
         "icon": {
@@ -55,7 +51,6 @@ user_key | false | No | User's ID for frequency capping and profile (replacement
           "height": 627
         },
         "vast": "VAST XML",
-        "vast_tag": "Link to VAST Tag"
       },
       "beacons": ["http://pixel.com"]
     }
@@ -100,13 +95,11 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 * `ad.creatives.icon` – Link to the icon (if requested).
 * `ad.creatives.main` – Link to the banner picture (if requested). 
 * `ad.creatives.vast` – `xml` in format [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/) (if requested). 
-* `ad.creatives.vast_tag` – link to VAST TAG if the vast_tag option was sent. 
 
 `html`
 
 * `ad.markup` – HTML string, which should be displayed. The tracking pixel shoud be attached as `img` tags.
 
-`video` TODO
+`video`
 
 * `ad.vast` – `xml` string in format [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/).
-* `ad.vast_tag` – link to VAST TAG if the vast_tag option was sent.
