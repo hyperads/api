@@ -12,8 +12,8 @@
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
-ip | false | Requester's ip | Device IP
-user_agent | false | Requester's user-agent | Device user-agent
+ip | false | Sender ip | Device IP
+user_agent | false | Sender user-agent | Device user-agent
 gaid | false | No | Google identifier for Advertiser
 ios_idfa | false | No | iOS identifier for Advertiser
 euid | For Mopub | No | Mopub identifier

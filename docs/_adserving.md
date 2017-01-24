@@ -94,7 +94,7 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 * `ad.beacons` – Array of the tracking links for recording the display. Each link provides link with a `gif` of `0х0` size. Every link should be requested when displaying (each redirection is added to statistics).
 * `ad.creatives.icon` – Link to the icon (if requested).
 * `ad.creatives.main` – Link to the banner picture (if requested). 
-* `ad.creatives.vast` – `xml` in format [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/) (if requested). 
+* `ad.creatives.vast` – `xml` in [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/) format (if requested). 
 
 `html`
 
@@ -102,4 +102,4 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 
 `video`
 
-* `ad.vast` – `xml` string in format [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/).
+* `ad.vast` – `xml` string in [VAST](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/) format.
