@@ -79,6 +79,8 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 
 * 'setting.redirect' – is used in Android version to specify the way of moving to URL when the ad is clicked, either a native application of the system or a web-browser.
 
+* `setting.skip` - is used in video players to specify posibility to skip playing video.
+
 #### Ad
 
 * `ad.type` – Response type for an ad. This setting defines the Ad object structure. The available parameter values are the following: `native`, `html`, `video`.
