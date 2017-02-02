@@ -27,7 +27,7 @@ user_key | false | No | User's ID for frequency capping and profile (replacement
 {
   "status": "success",
   "user": {"key": ":id"},
-  "settings": {"close_timer": 1, "viewability": 2, "redirect":"direct", "skip": true|false},
+  "settings": {"close_timer": 1, "viewability": 2, "redirect":"direct", "skip": true},
   "ads": [
     {
       "title": "Ad title",
