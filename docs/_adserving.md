@@ -10,15 +10,26 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Requester's ip | Device IP
 user_agent | false | Requester's user-agent | Device user-agent
-platform | false | No | Device platform (ios/android)
-device_type | false | phone | Device type (phone/tablet) if the user-agent absent
-format | false | No | Creative's format (ex. 120x80)
 content | false | title,icon,main | Required native content separated by comma: title,desc,icon,main
 callback | false | No | Callback function for [JSONP](https://en.wikipedia.org/wiki/JSONP) request
 ios_idfa | false| No | iOS advertising ID
 gaid | false | No | Android advertising ID
 limit | false | 1 | Count of advertisements
 user_key | false | No | User's ID for frequency capping and profile (replacement for Google's GAID and iOS IFA when disabled ad tracking in iOS 10)
+
+### Request examples (Android)
+
+* 320x50 (you should create 320x50 placement in UI) `http://ads.hyperadx.com/v2/ads/:placement_id?gaid=e8876377-a4b6-4e4e-a151-876ab207a870&ip=24.158.146.111&user_agent=Mozilla%2F5.0+%28Linux%3B+Android+5.1%3B+HTCD
+200LVW+Build%2FLMY47O%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%
+29+Version%2F4.0+Chrome%2F51.0.2704.81+Mobile+Safari%2F537.36`
+
+* Native placement (you should create Native placement in UI) `http://ads.hyperadx.com/v2/ads/:placement_id?content=icon,main,title,desc&gaid=e8876377-a4b6-4e4e-a151-876ab207a870&ip=24.158.146.111&user_agent=Mozilla%2F5.0+%28Linux%3B+Android+5.1%3B+HTCD
+200LVW+Build%2FLMY47O%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%
+29+Version%2F4.0+Chrome%2F51.0.2704.81+Mobile+Safari%2F537.36`
+
+* Video placement (you should create Video placement in UI) `http://ads.hyperadx.com/v2/ads/:placement_id?gaid=e8876377-a4b6-4e4e-a151-876ab207a870&ip=24.158.146.111&user_agent=Mozilla%2F5.0+%28Linux%3B+Android+5.1%3B+HTCD
+200LVW+Build%2FLMY47O%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%
+29+Version%2F4.0+Chrome%2F51.0.2704.81+Mobile+Safari%2F537.36`
 
 ### Response example
 
