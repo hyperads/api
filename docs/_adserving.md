@@ -12,7 +12,6 @@ ip | false | Requester's ip | Device IP
 user_agent | false | Requester's user-agent | Device user-agent
 platform | false | No | Device platform (ios/android)
 device_type | false | phone | Device type (phone/tablet) if the user-agent absent
-type | false | native | Type of advertisement: native/interstitial/html/banner/video/native_video/rewarded_video. Multiple values separated by "\|"
 format | false | No | Creative's format (ex. 120x80)
 content | false | title,icon,main | Required native content separated by comma: title,desc,icon,main
 callback | false | No | Callback function for [JSONP](https://en.wikipedia.org/wiki/JSONP) request
@@ -21,7 +20,7 @@ gaid | false | No | Android advertising ID
 limit | false | 1 | Count of advertisements
 user_key | false | No | User's ID for frequency capping and profile (replacement for Google's GAID and iOS IFA when disabled ad tracking in iOS 10)
 
-### Response parameters
+### Response example
 
 ```json
 {
@@ -83,7 +82,7 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 
 #### Ad
 
-* `ad.type` – Response type for an ad. This setting defines the Ad object structure. The available parameter values are the following: `native`, `html`, `video`.
+* `ad.type` – Response type for an ad. This setting defines the Ad object structure. The available parameter values are the following: `native`, `html`, `video`. Value depends on your placement's type:
 
 `native`
 
