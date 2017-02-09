@@ -99,7 +99,7 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 
 `html`
 
-* `ad.markup` – HTML string, which should be displayed. The tracking pixel shoud be attached as `img` tags.
+* `ad.markup` – HTML string, which should be displayed. The tracking pixel will be attached as `img` tags inside markup.
 
 `video`
 
