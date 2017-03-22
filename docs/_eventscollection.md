@@ -12,6 +12,8 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Sender ip | Device IP
 user_agent | false | Sender user-agent | Device user-agent
+lat | false | No | Sender lattitude
+lng | false | No | Sender longitude
 sdk_version | Yes | No | Version of SDK used by sender
 token | Yes | No | Token for authentication
 ios_idfa | Yes, for iOS| No | iOS advertising ID
