@@ -13,7 +13,7 @@ Parameter | Required | Default | Description
 ip | false | Sender ip | Device IP
 user_agent | false | Sender user-agent | Device user-agent
 sdk_version | Yes | No | Version of SDK used by sender
-ag_key | Yes | No | Token for identifying the audience group
+token | Yes | No | Token for identifying the audience group
 ios_idfa | Yes, for iOS| No | iOS advertising ID
 gaid | Yes, for android | No | Android advertising ID
 user_key | false | No | Custom user identifier
