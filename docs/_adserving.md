@@ -37,7 +37,7 @@ user_key | false | No | User's ID for frequency capping and profile (replacement
 {
   "status": "success",
   "user": {"key": ":id"},
-  "settings": {"close_timer": 1, "viewability": 2, "redirect":"direct", "skip": 5},
+  "settings": {"close_timer": 1, "viewability": 2, "redirect": "direct", "reward_label": "Coins", "reward_amount": 10},
   "ads": [
     {
       "title": "Ad title",
@@ -90,6 +90,12 @@ the SDK saves the identifier in the app. The next requests can use this identifi
 * 'setting.redirect' – is used in Android version to specify the way of moving to URL when the ad is clicked, either a native application of the system or a web-browser.
 
 * `setting.skip` - is used in video players to specify posibility to skip playing video.
+
+* `settings.s2s` - is used in rewarded video to specify S2S
+
+* `settings.reward_amount` - is used in rewarded video to specify reward label for completed view (Coins, Gold etc)
+
+* `settings.reward_amount` - is used in rewarded video to specify reward amount for completed view
 
 #### Ad
 
