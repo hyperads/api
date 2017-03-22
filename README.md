@@ -2,6 +2,6 @@
 
 # Internal API
 
-* [Ad serving API] (https://github.com/hyperads/api/blob/master/docs/_adserving.md#ad-serving-api)
-* [Events collection API] (https://github.com/hyperads/api/blob/master/docs/_eventscollection.md#Events-API)
-* [VAST for video players] (https://github.com/hyperads/api/blob/master/docs/_vastforvideoplayers.md#vast-player-api)
+* [Ad serving API](https://github.com/hyperads/api/blob/master/docs/_adserving.md#ad-serving-api)
+* [Events collection API](https://github.com/hyperads/api/blob/master/docs/_eventscollection.md#Events-API)
+* [VAST for video players](https://github.com/hyperads/api/blob/master/docs/_vastforvideoplayers.md#vast-player-api)
