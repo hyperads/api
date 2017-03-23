@@ -16,6 +16,7 @@ user_agent | No | Sender user-agent | Device user-agent
 lat | No | No | Sender lattitude
 lng | No | No | Sender longitude
 yob | No | No | Year of birth
+age | No | No | Age
 gender | No | No | male or female
 sdk_version | No | No | Version of SDK used by sender
 token | Yes | No | Token for authentication
