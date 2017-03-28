@@ -12,12 +12,14 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Sender ip | Device IP
 event | Yes | No | Pre-defined event code: 206(Purchase), 102(Login), etc
+bundle_id | Yes, for apps | No | Appstore or Google Play identifier for application
 user_agent | No | Sender user-agent | Device user-agent
 lat | No | No | Sender lattitude
 lng | No | No | Sender longitude
 yob | No | No | Year of birth
 age | No | No | Age
 gender | No | No | male or female
+keywords | No | No | Keywords
 sdk_version | No | No | Version of SDK used by sender
 token | Yes | No | Token for authentication
 ios_idfa | Yes, for iOS| No | iOS advertising ID
