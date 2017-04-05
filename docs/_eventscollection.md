@@ -4,10 +4,8 @@
 
 `GET http://ads.hyperadx.com/v2/events`
 
-#### (GET) request parameters 
-
 <details>
-<summary>Query parameters</summary>
+<summary>(GET) request parameters</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
@@ -68,6 +66,7 @@ content_type | No | No | Content type
 price | No | No | Content price
 </details>
 
+<details>
 <summary>Added Payment Info (Code: 203)</summary>
 
 Parameter | Required | Default | Description
@@ -171,6 +170,6 @@ price | No | No | Content price
 
 #### Social events
 
-- 501 Invite
-- 502 Rated
-- 504 Share
+- Invite (Code: 501)
+- Rated (Code: 502)
+- Share (Code: 504)
