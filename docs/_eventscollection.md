@@ -32,7 +32,8 @@ created_at | No | No | Event date ("%Y-%m-%d")
 
 ### Events with code and additional parameters
 
-Authenticate events
+#### Authenticate events
+
 - Login (Code: 102)
 - Open (Code: 103)
 
@@ -42,13 +43,20 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 success | No | No | Registration status
 
-eCommerce events
+#### eCommerce events
 
-- 201 Add to Wishlist
-- 202 Add to Cart
-- 203 Added Payment Info
-- 204 Reservation
-- 205 Checkout Initiated
+- Add to Wishlist (Code: 201)
+- Add to Cart (Code: 202)
+- Added Payment Info (Code: 203)
+- Reservation (Code: 204)
+
+- Checkout Initiated (Code: 205)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+price | No | No | Content price
 
 - Purchase (Code: 206)
 
@@ -62,7 +70,7 @@ revenue | No | No | Real revenue from purchase
 currency | No | No | Currency
 
 
-Content events
+#### Content events
 
 - Search (Code: 301)
 
@@ -79,7 +87,7 @@ Parameter | Required | Default | Description
 content_id | No | No | Content unique identifier
 content_type | No | No | Content type
 
-Gaming events
+#### Gaming events
 
 - Tutorial Completed (Code: 401)
 
@@ -98,10 +106,21 @@ attempts | No | No | Attempts to achive game level
 failed_attempts | No | No | Failed attempts to achive game level
 
 
-- 403 Achievement Unlocked
-- 404 Spent Credit
+- Achievement Unlocked (Code: 403)
 
-Social events
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+description | No | No | Archivement description
+
+- Spent Credit (Code: 404)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+price | No | No | Content price
+
+#### Social events
 
 - 501 Invite
 - 502 Rated
