@@ -48,10 +48,42 @@ success | No | No | Registration status
 
 #### eCommerce events
 
-- Add to Wishlist (Code: 201)
-- Add to Cart (Code: 202)
-- Added Payment Info (Code: 203)
-- Reservation (Code: 204)
+<details>
+<summary>Add to Wishlist (Code: 201)</summary>
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+price | No | No | Content price
+</details>
+
+<details>
+<summary>Add to Cart (Code: 202)</summary>
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+price | No | No | Content price
+</details>
+
+<summary>Added Payment Info (Code: 203)</summary>
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+success | No | No | Completion status
+</details>
+
+<details>
+<summary>Reservation (Code: 204)</summary>
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+price | No | No | Content price
+</details>
 
 <details>
 <summary>Checkout Initiated (Code: 205)</summary>
