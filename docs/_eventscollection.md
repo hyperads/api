@@ -6,7 +6,8 @@
 
 #### (GET) request parameters 
 
-### Query Parameters
+<details>
+<summary>Query parameters</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
@@ -28,7 +29,7 @@ ios_idfa | Yes, for iOS| No | iOS advertising ID
 gaid | Yes, for android | No | Android advertising ID
 user_key | No | No | Custom user identifier
 created_at | No | No | Event date ("%Y-%m-%d")
-
+</details>
 
 ### Events with code and additional parameters
 
@@ -37,11 +38,13 @@ created_at | No | No | Event date ("%Y-%m-%d")
 - Login (Code: 102)
 - Open (Code: 103)
 
-- Registration (Code: 101)
+<details>
+<summary>Registration (Code: 101)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 success | No | No | Registration status
+</details>
 
 #### eCommerce events
 
@@ -50,13 +53,15 @@ success | No | No | Registration status
 - Added Payment Info (Code: 203)
 - Reservation (Code: 204)
 
-- Checkout Initiated (Code: 205)
+<details>
+<summary>Checkout Initiated (Code: 205)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 content_id | No | No | Content unique identifier
 content_type | No | No | Content type
 price | No | No | Content price
+</details>
 
 - Purchase (Code: 206)
 
