@@ -63,7 +63,8 @@ content_type | No | No | Content type
 price | No | No | Content price
 </details>
 
-- Purchase (Code: 206)
+<details>
+<summary>Purchase (Code: 206)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
@@ -73,34 +74,41 @@ quantity | No | No | Quantity
 price | No | No | Content price
 revenue | No | No | Real revenue from purchase
 currency | No | No | Currency
-
+</details>
 
 #### Content events
 
-- Search (Code: 301)
+<details>
+<summary>Search (Code: 301)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 keyword | No | No | Search keyword
 content_type | No | No | Content type
 success | No | No | Completion status
+</details>
 
-- Content View (Code: 302)
+<details>
+<summary>Content View (Code: 302)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 content_id | No | No | Content unique identifier
 content_type | No | No | Content type
+</details>
 
 #### Gaming events
 
-- Tutorial Completed (Code: 401)
+<details>
+<summary>Tutorial Completed (Code: 401)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 success | No | No | Completion status
+</details>
 
-- Level Achieved (Code: 402)
+<details>
+<summary>Level Achieved (Code: 402)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
@@ -109,21 +117,25 @@ score | No | No | Game score in current moment
 lives | No | No | Game lives in current moment 
 attempts | No | No | Attempts to achive game level
 failed_attempts | No | No | Failed attempts to achive game level
+</details>
 
-
-- Achievement Unlocked (Code: 403)
+<details>
+<summary>Achievement Unlocked (Code: 403)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 description | No | No | Archivement description
+</details>
 
-- Spent Credit (Code: 404)
+<details>
+<summary>Spent Credit (Code: 404)</summary>
 
 Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 content_id | No | No | Content unique identifier
 content_type | No | No | Content type
 price | No | No | Content price
+</details>
 
 #### Social events
 
