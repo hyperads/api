@@ -30,12 +30,17 @@ user_key | No | No | Custom user identifier
 created_at | No | No | Event date ("%Y-%m-%d")
 
 
-### Event codes:
+### Events with code and additional parameters
 
 Authenticate events
-- 101 Registration
-- 102 Login
-- 103 Open
+- Login (Code: 102)
+- Open (Code: 103)
+
+- Registration (Code: 101)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+success | No | No | Registration status
 
 eCommerce events
 
@@ -44,17 +49,55 @@ eCommerce events
 - 203 Added Payment Info
 - 204 Reservation
 - 205 Checkout Initiated
-- 206 Purchase
+
+- Purchase (Code: 206)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
+quantity | No | No | Quantity
+price | No | No | Content price
+revenue | No | No | Real revenue from purchase
+currency | No | No | Currency
+
 
 Content events
 
-- 301 Search
-- 302 Content View
+- Search (Code: 301)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+keyword | No | No | Search keyword
+content_type | No | No | Content type
+success | No | No | Completion status
+
+- Content View (Code: 302)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+content_id | No | No | Content unique identifier
+content_type | No | No | Content type
 
 Gaming events
 
-- 401 Tutorial Completed
-- 402 Level Achieved
+- Tutorial Completed (Code: 401)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+success | No | No | Completion status
+
+- Level Achieved (Code: 402)
+
+Parameter | Required | Default | Description
+--------- | ------- | ------- | -----------
+level | No | No | Game level
+score | No | No | Game score in current moment 
+lives | No | No | Game lives in current moment 
+attempts | No | No | Attempts to achive game level
+failed_attempts | No | No | Failed attempts to achive game level
+
+
 - 403 Achievement Unlocked
 - 404 Spent Credit
 
