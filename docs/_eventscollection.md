@@ -11,8 +11,11 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Sender ip | Device IP
 event | Yes | No | Pre-defined event code: 206(Purchase), 102(Login), etc
-session_id | No | No | Unique identifier for user's session
 bundle_id | Yes, for apps | No | Appstore or Google Play identifier for application
+token | Yes | No | Token for authentication
+ios_idfa | Yes, for iOS| No | iOS advertising ID
+gaid | Yes, for android | No | Android advertising ID
+session_id | No | No | Unique identifier for user's session
 user_agent | No | Sender user-agent | Device user-agent
 connection_type | No | Sender connection type | Device connection type
 carrier | No | Sender carrier | Device carrier
@@ -23,9 +26,6 @@ age | No | No | Age
 gender | No | No | male or female
 keywords | No | No | Keywords
 sdk_version | No | No | Version of SDK used by sender
-token | Yes | No | Token for authentication
-ios_idfa | Yes, for iOS| No | iOS advertising ID
-gaid | Yes, for android | No | Android advertising ID
 user_key | No | No | Custom user identifier
 created_at | No | No | Event date ("%Y-%m-%d")
 </details>
