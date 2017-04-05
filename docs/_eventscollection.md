@@ -11,6 +11,7 @@ Parameter | Required | Default | Description
 --------- | ------- | ------- | -----------
 ip | false | Sender ip | Device IP
 event | Yes | No | Pre-defined event code: 206(Purchase), 102(Login), etc
+session_id | No | No | Unique identifier for user's session
 bundle_id | Yes, for apps | No | Appstore or Google Play identifier for application
 user_agent | No | Sender user-agent | Device user-agent
 connection_type | No | Sender connection type | Device connection type
