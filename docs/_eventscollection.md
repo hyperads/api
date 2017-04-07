@@ -27,7 +27,7 @@ gender | No | No | male or female
 keywords | No | No | Keywords
 sdk_version | No | No | Version of SDK used by sender
 user_key | No | No | Custom user identifier
-created_at | No | No | Event date ("%Y-%m-%d %H:%M:%S")
+created_at | No | No | Event date "%Y-%m-%d %H:%M:%S" in UTC
 </details>
 
 ### Events with code and additional parameters
