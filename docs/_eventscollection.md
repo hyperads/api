@@ -23,6 +23,9 @@ lat | No | No | Sender lattitude
 lng | No | No | Sender longitude
 yob | No | No | Year of birth
 age | No | No | Age
+width | No | No | Screen width
+height | No | No | Screen height
+
 gender | No | No | male or female
 keywords | No | No | Keywords
 sdk_version | No | No | Version of SDK used by sender
